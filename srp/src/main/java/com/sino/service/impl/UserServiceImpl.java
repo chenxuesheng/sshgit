@@ -48,7 +48,7 @@ public class UserServiceImpl extends JdbcDaoSupport implements UserServcie {
 	}
 
 	class UserRowMapper implements RowMapper {
-		public User mapRow(ResultSet rs, int rowNum) throws SQLException {
+		public User mapRow( ResultSet rs, int rowNum) throws SQLException {
 			User user = new User();
 			user.setId( rs.getString("id"));
 			user.setName(rs.getString("name"));
